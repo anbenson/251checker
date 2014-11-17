@@ -1,0 +1,24 @@
+{
+  "manifest_version": 2,
+
+  "name": "15-251 Grades Website Checker",
+  "description": "This extension pings the 15-251 grades website every once in a while and alerts you when the website is working.",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "offline.png",
+    "default_popup": "popup.html"
+  },
+
+  "permissions": [
+    "alarms",
+    "notifications",
+    "tabs",
+    "http://www.andrew.cmu.edu/course/15-251"
+  ],
+
+  "background": {
+    "scripts": ["eventPage.js"],
+    "persistent": false
+  }
+}
