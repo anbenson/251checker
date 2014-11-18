@@ -9,19 +9,19 @@ var NotificationManager = {
     type: "basic",
     title: "251 Grades Currently Online",
     message: "251 grades are accessible right now.",
-    iconUrl: "online-big.png"
+    iconUrl: "images/online-big.png"
   },
   offlineNotification: {
     type: "basic",
     title: "251 Grades No Longer Online",
     message: "The website seems to have gone offline.",
-    iconUrl: "offline-big.png"
+    iconUrl: "images/offline-big.png"
   },
   nextNotificationId: 0,
   notifyOnline: function() {
     // change icon to online
     chrome.browserAction.setIcon({
-      path: "online.png"
+      path: "images/online.png"
     });
     // send out notification
     chrome.notifications.create(NotificationManager.nextNotificationId.toString(),
@@ -32,7 +32,7 @@ var NotificationManager = {
   notifyOffline: function() {
     // change icon to offline
     chrome.browserAction.setIcon({
-      path: "offline.png"
+      path: "images/offline.png"
     });
     // send out notification
     chrome.notifications.create(NotificationManager.nextNotificationId.toString(),
