@@ -9,13 +9,13 @@ var NotificationManager = {
     type: "basic",
     title: "251 Grades Currently Online",
     message: "251 grades are accessible right now.",
-    iconUrl: "online.png"
+    iconUrl: "online-big.png"
   },
   offlineNotification: {
     type: "basic",
     title: "251 Grades No Longer Online",
     message: "The website seems to have gone offline.",
-    iconUrl: "offline.png"
+    iconUrl: "offline-big.png"
   },
   nextNotificationId: 0,
   notifyOnline: function() {
