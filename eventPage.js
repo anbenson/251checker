@@ -49,7 +49,7 @@ var WebsitePinger = {
   websiteToPing: "http://www.andrew.cmu.edu/course/15-251/grades/index.html",
   setup: function() {
     this.checksite();
-    chrome.alarms.create("myAlarm", {periodInMinutes: 0.1});
+    chrome.alarms.create("myAlarm", {periodInMinutes: 1});
   },
   checksite: function() {
     var xhr = new XMLHttpRequest();
